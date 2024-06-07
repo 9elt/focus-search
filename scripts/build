@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for manifest in *.manifest.json; do
+	target="${manifest//.manifest.json/}"
+	rm -rf "$target"
+	mkdir "$target"
+	cp index.js "$target/" && cp "$manifest" "$target/manifest.json"
+done
+
+rm -rf dist

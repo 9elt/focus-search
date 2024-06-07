@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Search",
+  "version": "1.0.0",
+  "description": "Focus on search input when loading a page",
+  "permissions": [],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "./index.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "focus.search@example.org",
+      "strict_min_version": "42.0"
+    }
+  }
+}
