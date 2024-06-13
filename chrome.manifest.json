@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Focus Search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Focus on search input when loading a page",
   "permissions": [],
   "host_permissions": [
